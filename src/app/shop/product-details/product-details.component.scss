@@ -1,0 +1,10 @@
+.prod-view {
+    max-width: 1000px !important; /* Lățimea maximă a containerului */
+    margin: 0 auto; /* Alinierea pe mijloc a containerului */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }

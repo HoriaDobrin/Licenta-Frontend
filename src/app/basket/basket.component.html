@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <div *ngIf="(basketService.basketSource$ | async) === null">
+        <h5>There are currently no items in your basket</h5>
+    </div>
+
+    <ng-container *ngIf="(basketService.basketSource$ | async) as basket">
+        <div class="container">
+            <div class="row">
+                <app-basket-summary
+                (addItem)="incrementQuantity($event)"
+                (removeItem)="removeItem($event)"
+                >
+                    
+                </app-basket-summary>
+            </div>
+
+            <div class="row">
+                <div class="col-6 offset-6">
+                    <app-order-totals></app-order-totals>
+                    <div class="d-grid">
+                        <a routerLink="/checkout" class="btn btn-outline-primary py-2 mb-4">
+                            Proceed to checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </ng-container>
+</div>

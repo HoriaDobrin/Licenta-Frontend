@@ -1,0 +1,53 @@
+.cart-no{
+    position: absolute;
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    background: blue;
+    color: white;
+    text-align: center;
+    top: -12px;
+    right: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+
+    &.active{
+        color:orange;
+    }
+}
+
+.logo{
+    cursor:pointer;
+    height: 60px; /* Setează înălțimea dorită a logo-ului */
+    width: auto;
+}
+
+.navbar {
+    //background-image: linear-gradient(rgb(128, 101, 101), rgb(59, 35, 35));
+}
+
+.icon{
+    color: aliceblue;
+    
+}
+
+.li-text {
+    color: aliceblue;
+}
+
+.cart-color {
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%;
+    font-size: 14px;
+    
+}
